@@ -1,0 +1,6 @@
+# In order to install [service name] you need to run
+# pip install -r requirements.txt
+# (i.e. target this file with the -r switch on pip).
+
+# now run the normal setup.py and get all the normal PyPI dependencies from there
+-e .
