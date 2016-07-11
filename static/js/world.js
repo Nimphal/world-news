@@ -23,24 +23,24 @@ var world = {
                         "Consumption" : 1,
                         "Production" : 2
                     },
-                    superRegions : edges.d3.regions.COUNTRIES_BY_CONTINENT,
                     renderer : edges.d3.newGenericVectorMap({
-                        width : 1100,
-                        height : 700,
+                        width : 1950,
+                        height : 1000,
                         projectionType : "mercator",
                         geojson : "/static/data/countries.geo.json",
-                        // geojson : "/static/data/canada.json",
-                        // center: {"lat" : 56, "lon" : 106},
                         mapScaleFit : "horizontal",
                         mapScaleBorder : 0.0,
-                        superRegionStyles : {
-                            "Africa" : {"fill" : "#00ff00"},
-                            "Asia" : {"fill" : "#ff0000"},
-                            "Europe" : {"fill" : "#0000ff"},
-                            "North America" : {"fill" : "#999999"},
-                            "Oceana" : {"fill" : "#ff00ff"},
-                            "South America" : {"fill" : "#00ffff"}
-                        }
+                        tooltipType : 'api',
+                        urlTemplate: "https://content.guardianapis.com/search?api-key=468583bf-d69d-4a67-b615-02f1b692f9c7&order-by=newest&show-fields=thumbnail&q=",
+                        mapTooltipTemplate: '<div id="news_tooltip" class="container"><div id="inside_div">' +
+                        '<h3>{{CountryName}}</h3>' +
+                        '<div class="row news-item"><div class="col-sm-2"><img src="{{results[0].fields.thumbnail}}"></div><div class="col-sm-8"><h4><a href="{{results[0].webUrl}}">{{results[0].webTitle}}</a></h4></div></div>' +
+                        '<span class="tapered-line"></span>' +
+                        '<div class="row news-item"><div class="col-sm-2"><img src="{{results[1].fields.thumbnail}}"></div><div class="col-sm-8"><h4><a href="{{results[1].webUrl}}">{{results[1].webTitle}}</a></h4></div></div>' +
+                        '<span class="tapered-line"></span>' +
+                        '<div class="row news-item"><div class="col-sm-2"><img src="{{results[2].fields.thumbnail}}"></div><div class="col-sm-8"><h4><a href="{{results[2].webUrl}}">{{results[2].webTitle}}</a></h4></div></div>' +
+                        '</div></div>',
+                        resultsNumber: 3
                     })
                 })
             ]

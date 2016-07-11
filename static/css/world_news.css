@@ -1,0 +1,93 @@
+#news_tooltip, #news_tooltip div {
+    border-radius: 25px;
+}
+
+#news_tooltip {
+    background-color: #A5AFB2;
+    padding: 2px;
+    color: #546166;
+}
+
+#inside_div {
+    padding: 10px;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+
+}
+
+#news_tooltip ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+#news_tooltip ul li {
+    padding-top: 10px;
+}
+
+#news_tooltip img {
+    height: auto;
+    width: auto;
+    max-height: 150px;
+    max-width: 150px;
+    box-shadow: 2px 2px 3px 1px #B2B2B2;
+}
+
+#news_tooltip h3{
+    text-align: center;
+}
+
+#news_tooltip h4 {
+    vertical-align: middle;
+    text-align: left;
+}
+
+#news_tooltip .container {
+    max-width: 1000px;
+}
+
+#news_tooltip a {
+    color: #3E6D7F;
+}
+
+#news_tooltip a:hover{
+    text-decoration: none;
+    color: #73A1B2;
+}
+
+#news_tooltip a:visited {
+    color: #546166;
+}
+
+.tapered-line{
+    display:block;
+    border:none;
+    color:white;
+    height:1px;
+    background:#546166;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#546166), to(#A5AFB2));
+}
+
+.news-item {
+    margin: 10px;
+}
+
+#world {
+    background-image: url("/static/water.jpg");
+    opacity: 0.7;
+    width: 1950px;
+}
+
+.edges-d3-generic-vector-map-container path:hover {
+    fill-opacity: 1 !important;
+    fill: #B2936F !important;
+}
+
+.edges-d3-generic-vector-map-pinned {
+    fill-opacity: 1 !important;
+    fill: #B2936F  !important;
+}
+
+.edges-d3-generic-vector-map-tooltip {
+    background: transparent;
+}

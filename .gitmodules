@@ -1,4 +1,4 @@
 [submodule "static/vendor/edges"]
 	path = static/vendor/edges
 	url = https://github.com/CottageLabs/edges
-	branch = develop
+	branch = feature/custom_tooltips
