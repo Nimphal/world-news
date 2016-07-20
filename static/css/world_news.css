@@ -3,15 +3,15 @@
 }
 
 #news_tooltip {
-    background-color: #A5AFB2;
+    background-color: #998953;
     padding: 2px;
-    color: #546166;
+    color: #3D3122;
 }
 
 #inside_div {
     padding: 10px;
     border-style: solid;
-    border-color: white;
+    border-color: #CCAE45;
     border-width: 2px;
 
 }
@@ -28,8 +28,8 @@
 #news_tooltip img {
     height: auto;
     width: auto;
-    max-height: 150px;
-    max-width: 150px;
+    max-height: 100px;
+    max-width: 100px;
     box-shadow: 2px 2px 3px 1px #B2B2B2;
 }
 
@@ -40,14 +40,16 @@
 #news_tooltip h4 {
     vertical-align: middle;
     text-align: left;
+    padding-left: 50px;
 }
 
-#news_tooltip .container {
-    max-width: 1000px;
+#news_tooltip {
+    z-index: 1000;
+    width: 600px;
 }
 
 #news_tooltip a {
-    color: #3E6D7F;
+    color: #3D3122;
 }
 
 #news_tooltip a:hover{
@@ -70,24 +72,47 @@
 
 .news-item {
     margin: 10px;
+    max-width: 700px;
 }
 
 #world {
-    background-image: url("/static/water.jpg");
+    background-color: #56998E;
     opacity: 0.7;
     width: 1950px;
 }
 
 .edges-d3-generic-vector-map-container path:hover {
     fill-opacity: 1 !important;
-    fill: #B2936F !important;
+    fill: #998953 !important;
 }
 
 .edges-d3-generic-vector-map-pinned {
     fill-opacity: 1 !important;
-    fill: #B2936F  !important;
+    fill: #998953  !important;
 }
 
 .edges-d3-generic-vector-map-tooltip {
     background: transparent;
+}
+
+.map-buttons {
+    background-color: #665238;
+}
+
+.map-buttons button {
+    background-color: #CCAE45;
+    color: #665238;
+    border-color: #665238;
+    font-size: 20px;
+}
+
+.dropdown-menu {
+    background-color: #CCAE45;
+    color: #665238;
+    border-color: #665238;
+    font-size: 20px;
+}
+
+.btn-default:hover, .open>.dropdown-toggle.btn-default {
+    background-color: #998953;
 }
